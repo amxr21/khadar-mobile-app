@@ -1,11 +1,10 @@
-import ParallaxScrollView from '@/components/parallax-scroll-view';
-import { Image } from 'expo-image';
 import { Text } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function Control () {
   return (
-    <ParallaxScrollView headerImage={<Image/>}>
+    <SafeAreaView  >
         <Text>Control</Text>
-    </ParallaxScrollView>
+    </SafeAreaView>
   );
 }

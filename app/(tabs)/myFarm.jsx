@@ -5,7 +5,7 @@ export default function MyFarm () {
   return (
 
     <SafeAreaView>
-        <Text>Test Home</Text>
+        <Text>Test Farm</Text>
     </SafeAreaView>
   );
 }
