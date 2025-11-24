@@ -14,6 +14,12 @@
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
-    "expo-env.d.ts"
-, "app/modal.jsx", "app/_layout.jsx", "app/(tabs)/_layout.tsx", "app/(tabs)/explore.jsx", "app/(tabs)/index.tsx.jsx"  ]
+    "expo-env.d.ts",
+    "app/modal.jsx",
+    "app/_layout.jsx",
+    "app/(tabs)/_layout.tsx",
+    "app/(tabs)/explore.jsx",
+    "app/(tabs)/index.tsx.jsx",
+    "nativewind-env.d.ts"
+  ]
 }
