@@ -3,7 +3,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function Control () {
   return (
-    <SafeAreaView  >
+    <SafeAreaView style={{ flex: 1, backgroundColor:'white' }} className='bg-red-600'>
         <Text>Control</Text>
     </SafeAreaView>
   );

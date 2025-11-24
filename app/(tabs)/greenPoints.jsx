@@ -3,7 +3,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function GreenPoints () {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1, backgroundColor:'white' }} className='bg-red-600'>
         <Text>GreenPoints</Text>
     </SafeAreaView>
   );
