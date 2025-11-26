@@ -16,6 +16,18 @@ module.exports = {
         bold: ['Sora-Bold'],
         extrabold: ['Sora-ExtraBold'],
       },
+      colors: {
+        dark: '#040F0F',
+        primaryGreen: '#04724D',
+        secondaryGreen: '#2BA84A',
+        blue: '#00A5CF',
+        white: '#FCFFFC',
+        darkBlue: '#004E64',
+        bgT: '#EBF9EF',
+        alert: '#BD0D00',
+        warning: '#E9B23A',
+      
+      }
     },
   },
   plugins: [],

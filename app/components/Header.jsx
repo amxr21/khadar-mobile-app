@@ -3,7 +3,8 @@ import { Image, Text, View } from "react-native";
 const HeaderImage = require("../../assets/images/header.png");
 
 import { SafeAreaView } from "react-native-safe-area-context";
-import Alarm from "./Alarm";
+import HeaderBrieft from "./HeaderBrieft";
+import NotificationBell from "./NotificationBell";
 import UserIcon from "./UserIcon";
 
 export default function Header({ data }){
@@ -19,9 +20,9 @@ export default function Header({ data }){
 
 
             <StatusBar translucent backgroundColor="transparent" barStyle="light-content" />
-            <SafeAreaView style={{height: 240, overflow: 'hidden',position: 'relative'}} className="py-10 px-6">
+            <SafeAreaView style={{height: 240, overflow: 'hidden',position: 'relative'}} className="py-10 px-6 flex flex-col gap-6">
                 <Image source={HeaderImage} style={{position:'absolute',inset:0, zIndex: 0 , width: 'full', height: 'fit'}}/>
-                <View style={{width: '100%', height: 'auto', padding: 0,}} className="flex flex-row gap-4 w-full">
+                <View style={{width: '100%', height: 'auto', padding: 0,}} className="flex flex-row items-center justify-between w-full">
                     {/* <Text style={{color: 'white'}}>Test</Text>             */}
                     <View className="flex flex-row gap-4 w-11/12">
                         <UserIcon userType={data?.userType || 'private institution'} />
@@ -31,12 +32,13 @@ export default function Header({ data }){
                         </View>
 
                     </View>
-                    <View className="w-1/12">
-                        <Alarm />
-
+                    <View className="min-w-1/12 w-1/12">
+                        <NotificationBell />
                     </View>
 
                 </View>
+
+                <HeaderBrieft />
             </SafeAreaView>
         </>
     )

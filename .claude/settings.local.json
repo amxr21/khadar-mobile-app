@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(ls:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd Sora font family with all weights and configure as default\n\n- Load Sora font family (Thin, ExtraLight, Light, Regular, Medium, SemiBold, Bold, ExtraBold) in app layout\n- Configure splash screen handling to wait for fonts to load\n- Set Sora-Regular as default sans font in Tailwind config\n- Add custom font weight classes for all Sora variants\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd UserIcon component with icon mapping based on user type\n\n- Create UserIcon component with PNG icon support\n- Map user types to corresponding icons (private institution, governmental firm, private firm)\n- Add icons for all three user types (priv.png, gov.png, pf.png)\n- Style icon container with rounded background and centered content\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git commit:*)",
+      "Bash(git rm:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
